@@ -11,3 +11,15 @@ for current_number in user_numbers:
     if current_number not in seen_numbers:
         print(current_number)
         seen_numbers.append(current_number)
+     
+     
+#Prog04: Track Lowest Value
+lowest_number = None
+while True:
+    user_input = input("Enter a number: ")
+    if not user_input.replace('.', '', 1).isdigit():
+        break
+        
+        
+#Prog05: Continuous Sort
+user_input = input("Enter a number: ")
