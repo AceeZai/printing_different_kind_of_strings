@@ -55,6 +55,8 @@ for char_item in user_text:
 #count
 user_text = input("Enter text: ")
 search_char = input("Enter character: ")
+
+char_total = 0
 #Set condition
 for char_item in user_text:
     if char_item == search_char:
