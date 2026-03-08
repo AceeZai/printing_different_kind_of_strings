@@ -53,6 +53,16 @@ for char_item in user_text:
 user_text = input("Enter text: ")
 prefix_text = input("Enter prefix: ")
 #Add loop
+prefix_match = True
+
+if len(prefix_text) > len(user_text):
+    prefix_match = False
+else:
+    for index_pos in range(len(prefix_text)):
+        if user_text[index_pos] != prefix_text[index_pos]:
+            prefix_match = False
+            break
+#done
 
 #count
 user_text = input("Enter text: ")
@@ -64,3 +74,14 @@ for char_item in user_text:
     if char_item == search_char:
         char_total += 1
 #done
+
+#index() without using index()
+user_text = input("Enter text: ")
+search_char = input("Enter character: ")
+
+found_index = -1
+
+for index_pos in range(len(user_text)):
+    if user_text[index_pos] == search_char:
+        found_index = index_pos
+        break
